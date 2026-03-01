@@ -38,9 +38,25 @@
             #endregion
 
 
+            #region Q02:
+
+
+            // a) yes he can access it the class , but not from outside the class with an object
 
 
 
+            // b)  protected internal can access in the same assembly or in the child classes from other assembly
+            //     private protected  access from the child classes in the same assembly only
+
+
+            //c) sealed with class means that the class cannot be inherited
+            //   and sealed with method means that the method cannot be overridde 
+
+
+            // d) yes i can create object  the sealed restrict only the inheritance 
+
+
+            #endregion
 
 
             #endregion
