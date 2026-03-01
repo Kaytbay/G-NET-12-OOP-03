@@ -66,6 +66,29 @@
 
             #region Part2
 
+            Cinema C1 = new Cinema("Nasr");
+
+            C1.OpenCinema();
+
+            StandardTicket t1 = new StandardTicket("ay r", 120m, "A-5");
+            VIPTicket t2 = new VIPTicket("qw y", 200m, true);
+            IMAXTicket t3 = new IMAXTicket("a dd", 180m, false);
+
+            C1.AddTicket(t1);
+            C1.AddTicket(t2);
+            C1.AddTicket(t3);
+
+            C1.PrintAllTickets();
+
+            Console.WriteLine("\n========== Statistics ==========");
+            Console.WriteLine($"Total Tickets Created: {Ticket.GetTotalTickets()}\n");
+
+
+            Console.WriteLine("Booking Ref 1: BK-1");
+            Console.WriteLine("Booking Ref 2: BK-2");
+
+            C1.CloseCinema();
+
 
             #endregion
 
