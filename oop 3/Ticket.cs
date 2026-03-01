@@ -11,9 +11,9 @@ namespace oop_3
     {
         public string MovieName { get; set; }
 
-		private decimal _price;
+		protected decimal _price;
 
-		public decimal Price
+		public virtual decimal Price
 		{
 			get { return _price; }
 			set { _price = value > 0 ? value : 0; }
@@ -37,7 +37,7 @@ namespace oop_3
 
         public override string ToString()
         {
-			return $"Ticket ID: {TicketId}, Movie Name: {MovieName}, Price After Tax: {PriceAfterTax:C}";
+			return $"Ticket ID: {TicketId}, Movie Name: {MovieName}, Price After Tax: {PriceAfterTax}";
         }
 
 
